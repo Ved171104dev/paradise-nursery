@@ -39,7 +39,7 @@ Paradise Nursery is a dynamic e-commerce shopping application for an online plan
 - Dynamic cart count indicator
 
 ## Technology Stack
-- **Frontend:** React 18
+- **Frontend:** React 19
 - **Build Tool:** Vite
 - **State Management:** Redux Toolkit
 - **Routing:** React Router DOM
@@ -60,6 +60,12 @@ npm run dev
 ### Build
 ```bash
 npm run build
+```
+
+### Validation
+```bash
+npm run lint
+npm test
 ```
 
 ## Assignment Grading Criteria

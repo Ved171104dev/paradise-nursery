@@ -82,10 +82,10 @@
 }
 
 .item-image {
-  font-size: 3rem;
-  text-align: center;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
   background: #f0f8f4;
-  padding: 10px;
   border-radius: 5px;
 }
 

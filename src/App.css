@@ -17,7 +17,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-image:
+    linear-gradient(135deg, rgba(8, 61, 44, 0.84), rgba(26, 113, 74, 0.64)),
+    url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1800&q=85');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
@@ -70,6 +75,15 @@ body {
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   animation: slideDown 0.8s ease-out;
+}
+
+.landing-eyebrow {
+  margin-bottom: 0.75rem !important;
+  color: #baf7d0 !important;
+  font-size: 0.9rem !important;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 @keyframes slideDown {

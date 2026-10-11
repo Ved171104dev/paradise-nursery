@@ -20,7 +20,8 @@ export default function Navbar() {
           </li>
           <li className="nav-item">
             <Link to="/cart" className="nav-link">
-              Cart <span className="cart-count">{cartQuantity}</span>
+              <span aria-hidden="true">🛒</span>
+              Cart <span className="cart-count" aria-label={`${cartQuantity} items in cart`}>{cartQuantity}</span>
             </Link>
           </li>
         </ul>

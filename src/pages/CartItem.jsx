@@ -45,7 +45,11 @@ export default function CartItem() {
                 
                 {cartItems.map(item => (
                   <div key={item.id} className="cart-item">
-                    <div className="item-image">{item.image}</div>
+                    <img
+                      className="item-image"
+                      src={item.image}
+                      alt={`${item.name} thumbnail`}
+                    />
                     
                     <div className="item-details">
                       <h3 className="item-name">{item.name}</h3>

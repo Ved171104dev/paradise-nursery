@@ -52,15 +52,13 @@
 }
 
 .product-image {
-  font-size: 4rem;
   margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
   background: #f0f8f4;
-  border-radius: 50%;
+  border-radius: 8px;
 }
 
 .product-name {
@@ -132,8 +130,6 @@
   }
 
   .product-image {
-    font-size: 3rem;
-    width: 80px;
-    height: 80px;
+    height: 130px;
   }
 }

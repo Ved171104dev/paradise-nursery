@@ -1,158 +1,52 @@
-# Paradise Nursery Shopping Application - Assignment Submission URLs
+# Paradise Nursery — Assignment Submission URLs
 
-This document contains the GitHub URLs for all assignment submission files.
+Repository: <https://github.com/Ved171104dev/paradise-nursery>
 
-## Grading Criteria & File URLs
+## Task 1 — README.md
 
-### Task 1: README.md (2 points)
-**File:** [README.md](README.md)
-- Contains project name "Paradise Nursery Shopping Application"
-- Includes project overview, features, technology stack
-- Provides getting started instructions
+<https://github.com/Ved171104dev/paradise-nursery/blob/main/README.md>
 
-### Task 2: AboutUs.jsx (1 point) 
-**File:** [src/components/AboutUs.jsx](src/components/AboutUs.jsx)
-- Displays company information
-- Includes mission statement
-- Features list and contact information
-- Company values and history
+Contains the project name, overview, feature list, technology stack, and setup instructions.
 
-### Task 3: App.css (1 point)
-**File:** [src/App.css](src/App.css)
-- Contains background styling for landing page
-- Gradient background with animations
-- Responsive design
-- Hero section styling with floating animations
+## Task 2 — AboutUs.jsx
 
-### Task 4: App.jsx (3 points)
-**File:** [src/App.jsx](src/App.jsx)
-- Landing page with company name "Paradise Nursery"
-- "Get Started" button linking to products
-- Redux Provider integration
-- React Router setup with all routes
-- Navbar component on all pages
+<https://github.com/Ved171104dev/paradise-nursery/blob/main/src/components/AboutUs.jsx>
 
-### Task 5: CartSlice.jsx (4 points)
-**File:** [src/store/CartSlice.jsx](src/store/CartSlice.jsx)
-- Redux Toolkit slice for shopping cart
-- Actions: addToCart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart
-- Manages cart state with items, totalQuantity, and totalAmount
-- Properly tracks product details and pricing
+Contains company background, mission, values, customer benefits, and contact information.
 
-### Task 6: ProductList.jsx (16 points)
-**File:** [src/pages/ProductList.jsx](src/pages/ProductList.jsx)
+## Task 3 — App.css
 
-**Functionalities Implemented:**
-✓ Display at least 6 unique houseplants per category (24 plants across 4 categories)
-✓ Group plants into 4 categories:
-  - Succulents (6 plants)
-  - Flowering Plants (6 plants)
-  - Foliage Plants (6 plants)
-  - Herb Plants (6 plants)
+<https://github.com/Ved171104dev/paradise-nursery/blob/main/src/App.css>
 
-✓ Each plant displays:
-  - Thumbnail image (emoji representation)
-  - Plant name
-  - Price
+Implements the landing-page background image, overlay, responsive layout, and call-to-action styling.
 
-✓ "Add to Cart" buttons that:
-  - Add product to shopping cart
-  - Disable after product is added
-  - Show "✓ Added" text when disabled
+## Task 4 — App.jsx
 
-✓ Includes Navbar with:
-  - Link to Home
-  - Link to Plants
-  - Link to Cart with dynamic count
+<https://github.com/Ved171104dev/paradise-nursery/blob/main/src/App.jsx>
 
-✓ Cart icon displays total number of items dynamically
+Contains the Paradise Nursery landing page, company name, introductory copy, and Get Started button.
 
-### Task 7: CartItem.jsx (23 points)
-**File:** [src/pages/CartItem.jsx](src/pages/CartItem.jsx)
+## Task 5 — CartSlice.jsx
 
-**Functionalities Implemented:**
-✓ Show total cart amount of plants
-✓ Show total cost for each plant in cart
-✓ Each plant in cart displays:
-  - Thumbnail
-  - Name
-  - Unit price
+<https://github.com/Ved171104dev/paradise-nursery/blob/main/src/store/CartSlice.jsx>
 
-✓ Buttons to:
-  - Increase quantity (updates cart correctly)
-  - Decrease quantity (updates cart correctly)
-  - Delete item from cart
+Implements Redux cart state and actions for adding, removing, increasing, decreasing, and clearing items.
 
-✓ Checkout button showing "Coming Soon" message
-✓ Continue shopping button linking back to ProductList
-✓ Dynamic cart total calculation
-✓ Order summary section with subtotal and grand total
+## Task 6 — ProductList.jsx
 
-## Key Features
+<https://github.com/Ved171104dev/paradise-nursery/blob/main/src/pages/ProductList.jsx>
 
-### Navigation
-- Responsive navbar on all pages
-- Links to Home, Plants, and Cart sections
-- Dynamic cart count indicator
+Displays 24 plants across four categories. Each category contains six plants with a thumbnail, name, price, and Add to Cart button. Buttons disable based on Redux cart state, while the shared navbar displays a dynamic cart count.
 
-### State Management
-- Redux Toolkit for centralized state management
-- Proper action dispatching
-- State persistence during session
+## Task 7 — CartItem.jsx
 
-### Responsive Design
-- Mobile-friendly interface
-- Tablet support
-- Desktop optimization
+<https://github.com/Ved171104dev/paradise-nursery/blob/main/src/pages/CartItem.jsx>
 
-### User Experience
-- Smooth animations and transitions
-- Visual feedback on interactions
-- Clear product information
-- Easy cart management
+Displays thumbnails, names, unit prices, quantities, per-item totals, the overall cart amount, quantity controls, delete controls, a Coming Soon checkout button, and a Continue Shopping link.
 
-## How to Run
+## Verification
 
-1. Navigate to project directory:
-   ```bash
-   cd c:\Users\HP\Desktop\FEDF\paradise-nursery
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Build for production:
-   ```bash
-   npm run build
-   ```
-
-## Project Statistics
-
-- **Total Files:** 14 components/pages
-- **CSS Files:** 6 custom stylesheets
-- **Components:** Navbar, AboutUs, Home, ProductList, CartItem
-- **Products:** 24 unique plants across 4 categories
-- **Store:** Redux Toolkit with CartSlice
-- **Framework:** React 18 + Vite
-- **State Management:** Redux Toolkit
-- **Routing:** React Router DOM
-
-## All Assignment Requirements Met ✓
-
-✓ Task 1: README.md with project details
-✓ Task 2: AboutUs.jsx component created
-✓ Task 3: App.css with landing page styling
-✓ Task 4: App.jsx with landing page and social links
-✓ Task 5: CartSlice.jsx with Redux state management
-✓ Task 6: ProductList.jsx with all required features
-✓ Task 7: CartItem.jsx with shopping cart functionality
-
-**Total Points Possible:** 50 points
-**All Tasks Completed:** 100%
+- `npm run lint` — passed
+- `npm test` — 3 cart behavior tests passed
+- `npm run build` — production build passed
+- `npm audit` — 0 vulnerabilities
